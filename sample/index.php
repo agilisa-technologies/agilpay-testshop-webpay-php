@@ -19,8 +19,13 @@
                 'Email': 'j.smith@gmail.com',
                 'PhoneNumber': '8293244777',
                 'Identification': '00520201129',
-                'ReturnURL': 'https://sandbox-webpay.agilpay.net/',  // <--- your site URL
-                'SuccessURL': 'https://sandbox-webpay.agilpay.net/Success',  // <--- your site Receipt URL
+                "BodyBackground": "#f8f9fa",
+                "PrimaryColor": "#007bff",
+                "Tc": "true",
+                "Ach": "true",
+                "NoHeader": "0",  
+                'ReturnURL': 'https://sandbox-webpay.agilpay.net/',  // <--- your site URL HERE
+                'SuccessURL': 'https://sandbox-webpay.agilpay.net/Success',  // <--- your site Receipt URL HERE
                 'Detail': '{"Payments":[{"Items":[{"Description":"Service Invoice 122233","Quantity":"1","Amount":100,"Tax":0}],"MerchantKey":"TEST-001","Service":"ABC12345","MerchantName":"Test Store","Description":"Service Invoice 12233","Amount":123.55,"Tax":0,"Currency":"840"}]}',
                 'token': accessToken
             };

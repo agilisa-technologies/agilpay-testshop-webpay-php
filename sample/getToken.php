@@ -1,11 +1,15 @@
 <?php
-// API endpoint and request data
+// API endpoint and request JWT access token
 $api_url = 'https://sandbox-webapi.agilpay.net/oauth/paymenttoken';
-$client_id = 'API-001';
+// replace with your client_id and client_secret
+$client_id = 'API-001';  
 $client_secret = 'Dynapay';
-$orderId = 'User-123456';
-$customerId = 'User-123456';
-$amount = 'ABC12345';
+// customer order number, same as Detail.Service  
+$orderId = 'ABC12345';  
+// customer account number
+$customerId = 'User-123456';  
+// order total amount
+$amount = '123.55'; 
 
 // Prepare the request data
 $request_data = [
