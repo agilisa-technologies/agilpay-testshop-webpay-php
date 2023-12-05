@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Send POST Request</title>
+    <title>Send POST Request using html IFRAME</title>
 </head>
 <body>
     <h2>Click the button to send your Order</h2>
@@ -9,7 +9,7 @@
         <button type="button" onclick="getTokenAndSubmit()">Pay your order</button>
     </form>
 
-    <iframe id="agilpay_frame" name="agilpay_frame" style="width: 100%; overflow: hidden; border: none;" height="623" scrolling="no">
+    <iframe id="agilpay_frame" name="agilpay_frame" style="width: 100%; overflow: hidden; border: none;" height="703" scrolling="no">
     </iframe>
   
   
@@ -52,9 +52,13 @@
                 }
             }
 
+	    var x = document.getElementById("agilpay_frame");
+	    x.style.display = "block";
+		
             // Append the form to the document body and submit
             document.body.appendChild(form);
             form.submit();
+	
         }
 		
 		// get the JWT access token on server side 
